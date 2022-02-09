@@ -1,12 +1,29 @@
-<script>
-function validateUsername() {
+<!DOCTYPE html>
+<html>
 
-    if (p_username.value == "B") {
-        location.href = 'student.html';
+<body style="text-align:center;">
+	<h1 style="color:green;">
+			GeeksforGeeks
+	</h1>
+	<h2>Text value property</h2>
+	<p>
+		Change the text of the text field,
+		and then click the button below.
+	</p>
 
-    } else if (p_username.value == "E") {
+	Name:<input type="text" id="myText" value="Mickey">
+	<button type="button" onclick="myFunction()">Try it</button>
+	<p id="demo"></p>
 
-        location.href = 'staff.html';
-    }
-}
-</script>
+	
+	<script>
+	
+	// Here the value is stored in new variable x
+	function myFunction() {
+		var x = document.getElementById("myText").value;
+		document.getElementById("demo").innerHTML = x;
+	}
+	</script>
+</body>
+
+</html>
