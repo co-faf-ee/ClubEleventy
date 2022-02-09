@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html>
 
+<head>
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	<script>
+	$(document).ready(function() {
+		$("button").click(function() {
+			
+			// Here the value is stored in variable.
+			var x = $("input:text").val();
+			document.getElementById("demo").innerHTML = x;
+		});
+	});
+	</script>
+</head>
+
 <body style="text-align:center;">
 	<h1 style="color:green;">
 			GeeksforGeeks
-	</h1>
-	<h2>Text value property</h2>
+		</h1>
+	<h2>jquery val() method</h2>
 	<p>
-		Change the text of the text field,
-		and then click the button below.
+	Change the text of the text field, and
+	then click the button below.
 	</p>
 
-	Name:<input type="text" id="myText" value="Mickey">
-	<button type="button" onclick="myFunction()">Try it</button>
+	<p>Name:<input type="text" name="user"
+				value="GeeksforGeeks">
+	</p>
+
+	<button>Get the value of the input field</button>
 	<p id="demo"></p>
 
-	
-	<script>
-	
-	// Here the value is stored in new variable x
-	function myFunction() {
-		var x = document.getElementById("myText").value;
-		document.getElementById("demo").innerHTML = x;
-	}
-	</script>
 </body>
 
 </html>
